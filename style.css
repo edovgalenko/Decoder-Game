@@ -52,6 +52,7 @@ input#code {
     user-select: none;
     caret-color: transparent;
     color: #c9c9c9;
+    overflow: visible;
 }
 
 input#code::placeholder {
