@@ -80,7 +80,8 @@ keyboardElement.addEventListener('click', function(event) {
 });
 
 function addChar(x) {
-    if (codeElement.value.length < 4) {
+    let currentValue = codeElement.value;
+    if (currentValue.length < 4 && currentValue.indexOf(x) === -1) {
         codeElement.value += x;
     }
 }
