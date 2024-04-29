@@ -57,6 +57,16 @@ input#code {
     border-radius: 0;
 }
 
+input#code.wrong {
+    background: repeating-linear-gradient(90deg, #ff7676 0, #ff7676 1ch, transparent 0, transparent 1.5ch) 0 100% / 5.5ch 2px no-repeat;
+    color: #ff7676;
+}
+
+input#code.correct {
+    background: repeating-linear-gradient(90deg, #8eff74 0, #8eff74 1ch, transparent 0, transparent 1.5ch) 0 100% / 5.5ch 2px no-repeat;
+    color: #8eff74;
+}
+
 input#code::placeholder {
     color: #c9c9c9;
 }

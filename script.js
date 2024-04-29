@@ -27,11 +27,6 @@ const game = (function() {
     };
 })();
 
-deleteButton.addEventListener("click", deleteCode)
-function deleteCode () {
-    codeElement.value = ''
-}
-
 enterButton.addEventListener("click", checkCode)
 function checkCode () {
     let secretCode = game.secretCode;
@@ -48,6 +43,8 @@ function checkCode () {
             correctDigits++;
         }
     }
+
+    inputCode === secretCode ? codeElement.classList.add("correct") : codeElement.classList.add("wrong")
 
     let logMessage = `
         <div class="log-message">
@@ -78,6 +75,12 @@ keyboardElement.addEventListener('click', function(event) {
         addChar(target.textContent);
     }
 });
+
+deleteButton.addEventListener("click", deleteCode)
+function deleteCode () {
+    codeElement.value = ''
+    codeElement.classList.remove(...codeElement.classList);
+}
 
 function addChar(x) {
     let currentValue = codeElement.value;
