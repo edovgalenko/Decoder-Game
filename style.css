@@ -53,6 +53,8 @@ input#code {
     caret-color: transparent;
     color: #c9c9c9;
     overflow: visible;
+    border: none;
+    border-radius: 0;
 }
 
 input#code::placeholder {
