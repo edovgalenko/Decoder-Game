@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: URL(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.left {
+    background: #eeeeee;
+    border-radius: 20px;
+    padding: 24px;
+    height: 344px;
+}
+
+.screen {
+    background: #3030c3;
+    padding: 40px 14px 52px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+input#code {
+    display: block;
+    border: none;
+    padding: 0;
+    width: 121px;
+    background: repeating-linear-gradient(90deg, #c9c9c9 0, #c9c9c9 1ch, transparent 0, transparent 1.5ch) 0 100% / 5.5ch 2px no-repeat;
+    font: 40px droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
+    user-select: none;
+    caret-color: transparent;
+    color: #c9c9c9;
+}
+
+input#code::placeholder {
+    color: #c9c9c9;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+}
+
+#keyboard > button {
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid #000030;
+    outline: none;
+}
+
+#keyboard > button:hover {
+    cursor: pointer;
+    background: #ebebeb;
+}
+
+#keyboard > button:active {
+    background: #e2e2e2;
+}
+
+.right {
+    background: #8c8d93;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+div#log {
+    background: black;
+    padding: 16px;
+    width: 256px;
+    border-radius: 6px;
+    height: 440px;
+    min-height: 440px;
+    max-height: 440px;
+    overflow: auto;
+    color: #ffffff;
+    font-family: monospace;
+    color: white;
+}
+
+.log-message {
+    overflow: hidden;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.log-message p {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+button#newgame {
+    padding: 8px;
+    width: 124px;
+    margin: 12px auto 0;
+    border-radius: 6px;
+    background: #6e707c;
+    border: 1px solid #fffbcf;
+    color: #fffbcf;
+}
+
+button#newgame:hover {
+    cursor: pointer;
+    background: #888a95;
+}
+
+button#newgame:active {
+    background: #848799;
+}

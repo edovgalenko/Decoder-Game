@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main" style="position: relative; z-index: 1;">
+        <div class="left">
+            <div class="screen">
+                <input id="code" type="text" placeholder="CODE" disabled />
+            </div>
+            <div id="keyboard">
+                <button class="key" data-char="1">1</button>
+                <button class="key" data-char="2">2</button>
+                <button class="key" data-char="3">3</button>
+                <button class="key" data-char="4">4</button>
+                <button class="key" data-char="5">5</button>
+                <button class="key" data-char="6">6</button>
+                <button class="key" data-char="7">7</button>
+                <button class="key" data-char="8">8</button>
+                <button class="key" data-char="9">9</button>
+                <button id="del">Del</button>
+                <button class="key" data-char="0">0</button>
+                <button id="enter">Enter</button>
+            </div>
+        </div>
+        <div class="right">
+            <div id="log">
+                <p>Rules:
+                <p>1. Try to guess the secret code consisting of 4 unique digits.
+                <p>2. Enter your guess using virual keyboard.
+                <p>3. Press 'Del' to clear input.
+                <p>4. Press 'Enter' to check your guess.
+                <p>5. You have unlimited attempts to guess the code.
+                <p>6. Good luck!
+            </div>
+
+            <button id="newgame">Start new game</button>
+        </div>
+    </div>
+</body>
+</html>
