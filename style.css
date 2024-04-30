@@ -29,11 +29,14 @@ body {
     padding: 24px;
     height: 344px;
     width: 188px;
+    display: flex;
+    flex-direction: column;
 }
 
 .screen {
+    position: relative;
+    height: 140px;
     background: #3030c3;
-    padding: 40px 14px 52px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -42,19 +45,20 @@ body {
 }
 
 input#code {
-    display: block;
+    width: 100%;
     border: none;
     padding: 0;
-    width: 121px;
     background: repeating-linear-gradient(90deg, #c9c9c9 0, #c9c9c9 1ch, transparent 0, transparent 1.5ch) 0 100% / 5.5ch 2px no-repeat;
     font: 40px droid sans mono, consolas, monospace;
     letter-spacing: 0.5ch;
     user-select: none;
     caret-color: transparent;
     color: #c9c9c9;
-    overflow: visible;
     border: none;
     border-radius: 0;
+    flex: 0 auto;
+    text-align: center;
+    background-position-x: 28px;
 }
 
 input#code.wrong {
